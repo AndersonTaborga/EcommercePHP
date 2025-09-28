@@ -10,7 +10,7 @@ define('DB_NAME', 'hcode_shop');
 define('DB_CHARSET', 'utf8');
 
 // Configurações do Servidor
-define('SERVER_URL', 'http://localhost');
+define('SERVER_URL', 'http://localhost:8000');
 define('DEBUG_MODE', true);
 
 // Configurações de Sessão
