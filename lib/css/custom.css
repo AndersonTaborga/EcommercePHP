@@ -1,0 +1,307 @@
+/* Estilos customizados para a página inicial */
+
+/* Hero Section */
+.hero-banner {
+    background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%);
+    color: white;
+    padding: 80px 0;
+    margin-top: 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+.hero-image img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6f42c1, #e83e8c);
+    border: none;
+    margin: 0 auto 40px;
+}
+
+/* Product Cards */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e83e8c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.product-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.product-title a:hover {
+    color: #6f42c1;
+}
+
+.product-price {
+    margin-bottom: 15px;
+}
+
+.price-current {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6f42c1;
+}
+
+.price-original {
+    font-size: 1.1rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product-actions .btn {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Category Cards */
+.category-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    color: #6f42c1;
+    margin-bottom: 20px;
+}
+
+.category-card h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.category-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Benefits Section */
+.benefit-item {
+    padding: 30px 20px;
+}
+
+.benefit-item i {
+    margin-bottom: 20px;
+}
+
+.benefit-item h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Newsletter Section */
+.newsletter-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.newsletter-form .form-control {
+    border-radius: 25px 0 0 25px;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 25px 25px 0;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+/* Cart Icon */
+.cart-icon .btn {
+    position: relative;
+    padding: 8px 15px;
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e83e8c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .category-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Header adjustments */
+header {
+    background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#logotipo {
+    max-height: 80px;
+    margin: 10px 0;
+}
+
+/* Navigation */
+#menu ul li {
+    margin: 0 10px;
+}
+
+#menu ul li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* Search input */
+.search .form-control {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    width: 200px;
+}
+
+.search .btn {
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.search .btn:hover {
+    background: rgba(255,255,255,0.3);
+}
