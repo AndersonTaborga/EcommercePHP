@@ -17,6 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="lib/css/style-mobile.css">
+    <link rel="stylesheet" href="lib/css/custom.css">
     <script src="lib/angularjs/angular.min.js"></script>
 </head>
 
@@ -107,19 +108,24 @@
             <div class="row">
                 <nav id="menu" class="pull-right">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="#">Tickets</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Schedule</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="shop">Produtos</a></li>
+                        <li><a href="videos">Videos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
                         <li class="search">
                             <div class="input-group">
-                                <input type="search" class="form-control" placeholder="Search">
+                                <input type="search" class="form-control" placeholder="Buscar produtos...">
                                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </span>
                             </div>
-                            <!-- /input-group -->
+                        </li>
+                        <li class="cart-icon">
+                            <a href="cart" class="btn btn-primary">
+                                <i class="fa fa-shopping-cart"></i> Carrinho
+                                <span class="badge" ng-if="carrinhoCount > 0">{{carrinhoCount}}</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
